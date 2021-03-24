@@ -1,8 +1,15 @@
 <h1>I'm in the app component</h1>
 <div id="login">
-    <p>Sign in stuff goes here</p>
+    <form>
+        <label for="name" class="form-label">Name: </label>
+        <label for="email" class="form-label">Email: </label>
+        <label for="password" class="form-lab">Password: </label>
+    </form>
+    <a routerLink="/application-view">Sign In</a>
 </div>
 
 <div id="image-div">
     <img src="../assets/images/hero-image.png" alt="A buffet and seating taken from the ceiling" />
 </div>
+
+<router-outlet></router-outlet>
