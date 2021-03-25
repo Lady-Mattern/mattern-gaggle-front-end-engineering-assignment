@@ -1,0 +1,21 @@
+#flex-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left {
+    width: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    position: absolute;
+    left: 50vw;
+    height: 100vh;
+}
