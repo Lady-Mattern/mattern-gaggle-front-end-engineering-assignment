@@ -14,16 +14,19 @@
                 <label for="email" class="form-label">Email: </label>
                 <label for="password" class="form-lab">Password: </label>
             </form>
-            <a routerLink="/application-view">Sign In</a>
+            <routerLink routerLink="/application-view">Sign In</routerLink>
 
             <!-- Importing the modal html to overlay above this page -->
-            <!-- <app-register-modal><p>I'm alive!!</p></app-register-modal> -->
         </main>
         <footer>
-            <p><a routerLink="/register">Register</a> | Forgot Password</p>
+            <p><button (click)="modalService.open('register-modal')">Register</button> | Forgot Password</p>
         </footer>
     </div>
     
     <img src="../../assets/images/hero-image.png" alt="A buffet and seating taken from the ceiling" />
-
+    
 </div>
+<register-modal id="register-modal">
+    <p>I'm alive!!</p>
+    <button (click)="modalService.close('register-modal')">Cancel</button>
+</register-modal>

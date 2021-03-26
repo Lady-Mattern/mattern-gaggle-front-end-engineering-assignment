@@ -1,3 +1,20 @@
-app-register-modal {
-    color: black;
+register-modal {
+    display: none;
 }
+
+.register-modal {
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1000;
+}
+
+.register-modal-body {
+    background-color: rebeccapurple;
+    color: ivory;
+}
+
+.register-modal-background {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
