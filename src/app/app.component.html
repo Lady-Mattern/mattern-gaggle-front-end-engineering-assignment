@@ -1,4 +1,4 @@
-<div id="flex-wrapper">
+<!-- <div id="flex-wrapper">
     <div id="left">
         <nav>
             <svg xmlns="http://www.w3.org/2000/svg" width="140" height="38" viewBox="0 0 140 38">
@@ -16,14 +16,27 @@
             </form>
             <a routerLink="/application-view">Sign In</a>
 
-            <!-- Importing the modal html to overlay above this page -->
         </main>
         <footer>
-            <p>>Register | Forgot Password</p>
+            <p><button (click)="open('register-modal')">Register</button> | Forgot Password</p>
         </footer>
     </div>
     
     <img src="../../assets/images/hero-image.png" alt="A buffet and seating taken from the ceiling" />
     
-</div>
+</div> -->
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(myModal)">Open My Modal</button>
+   
+<ng-template #myModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
+  </div>
+  <div class="modal-body">
+    This is example from ItSolutionStuff.com
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+  </div>
+</ng-template>
 <router-outlet></router-outlet>
